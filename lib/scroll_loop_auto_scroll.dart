@@ -124,7 +124,7 @@ class _ScrollLoopAutoScrollState extends State<ScrollLoopAutoScroll>
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       controller: scrollController,
-      physics: const FixedExtentScrollPhysics(),
+      physics: const AlwaysScrollableScrollPhysics(),
       scrollDirection: widget.scrollDirection,
       reverse: widget.reverseScroll,
       child: SlideTransition(
